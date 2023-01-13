@@ -1,29 +1,33 @@
-public class Horse extends Animal {
+package task19part1;
+
+public class Dog extends Animal {
+
     @Override
     public void makeSound() {
-        System.out.println("Лошадь гогочет");
+        System.out.println("Собака лает");
     }
 
     @Override
     public void eat() {
         if (this.foodCounter > 0) {
-            System.out.println("Лошадь ест");
+            System.out.println("Собака ест");
             this.foodCounter--;
             System.out.println(" Осталось запасов корма: " + this.foodCounter);
-            if (this.foodCounter <= 0) System.out.println(" В следующий раз лошади есть будет нечего.\n" +
+            if (this.foodCounter <= 0) System.out.println(" В следующий раз собаке есть будет нечего.\n" +
                     " Не забудьте пополнить запасы");
         }
         else {
-            System.out.println("Лошадь не может есть, пополните запасы корма!");
+            System.out.println("Собака не может есть, пополните запасы корма!");
         }
+
     }
 
     @Override
     public void sleep() {
-        System.out.println("Кошка спит");
+        System.out.println("Собака спит");
     }
 
-    Horse(String name, String food, int foodCounter, String location, int counter, HealthState health) {
+    Dog(String name, String food, int foodCounter, String location, int counter, HealthState health) {
         this.name = name;
         this.food = food;
         this.foodCounter = foodCounter;

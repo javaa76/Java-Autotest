@@ -1,20 +1,22 @@
-public class Cat extends Animal {
+package task19part1;
+
+public class Horse extends Animal {
     @Override
     public void makeSound() {
-        System.out.println("Кошка мяукает");
+        System.out.println("Лошадь гогочет");
     }
 
     @Override
     public void eat() {
         if (this.foodCounter > 0) {
-            System.out.println("Кошка ест");
+            System.out.println("Лошадь ест");
             this.foodCounter--;
             System.out.println(" Осталось запасов корма: " + this.foodCounter);
-            if (this.foodCounter <= 0) System.out.println(" В следующий раз кошке есть будет нечего.\n" +
+            if (this.foodCounter <= 0) System.out.println(" В следующий раз лошади есть будет нечего.\n" +
                     " Не забудьте пополнить запасы");
         }
         else {
-            System.out.println("Кошка не может есть, пополните запасы корма!");
+            System.out.println("Лошадь не может есть, пополните запасы корма!");
         }
     }
 
@@ -23,7 +25,7 @@ public class Cat extends Animal {
         System.out.println("Кошка спит");
     }
 
-    Cat(String name, String food, int foodCounter, String location, int counter, HealthState health) {
+    Horse(String name, String food, int foodCounter, String location, int counter, HealthState health) {
         this.name = name;
         this.food = food;
         this.foodCounter = foodCounter;

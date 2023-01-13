@@ -1,3 +1,5 @@
+package task19part1;
+
 public class Vet {
     private String name;
 
