@@ -4,8 +4,13 @@ public abstract class Person {
     protected int age;
     protected String name;
 
+    public Person(String name, int age) {
+        this.age = age;
+        this.name = name;
+    }
+
     public String toString() {
-        String output = "Данные водителе: " + "\n Имя - " + this.name +
+        String output = "Имя - " + this.name +
                 "\n Возраст - " + this.age;
         return output;
     }

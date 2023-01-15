@@ -6,14 +6,13 @@ public class Driver extends Person {
     protected int drivingExperience;
     protected long licenseId;
     public Driver(String name, int age, int drivingExperience, long licenseId) {
-        this.name = name; // Можно сделать защиту у невалидного ввода
-        this.age = age;
+        super(name, age);
         this.drivingExperience = drivingExperience;
         this.licenseId = licenseId;
     }
     @Override
     public String toString() {
-        String output = this.name + " - возраст: " + this.age +
+        String output = super.toString() +
                 "\n - стаж: " + this.drivingExperience +
                 "\n - № удостоверения: " + this.licenseId;
         return output;
