@@ -7,7 +7,7 @@ public class Main {
             System.out.println("Некорретное число - завершение программы");
             System.exit(0);
         }
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+        if ((year % 4 == 0 && year % 100 != 0 ) || year % 400 == 0)
             System.out.println("YES");
         else System.out.println("NO");
     }
