@@ -3,7 +3,7 @@ package task47part3;
 public class Main {
     static void snakePrint(int n, int col) {
 
-        if (n < 1 && col < 0) {
+        if (n < 1 || col <= 0) {
             System.out.println("Параметры неверны!");
             System.exit(0);
         }

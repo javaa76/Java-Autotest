@@ -1,9 +1,7 @@
 package task47part5;
 
 public class Calculator {
-    static int add(int x, int y) {
-        return x = y;
-    }
+    static int add(int x, int y) { return x + y; }
     static int sub(int x, int y) {
         return x - y;
     }

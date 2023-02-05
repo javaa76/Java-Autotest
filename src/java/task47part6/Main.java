@@ -9,7 +9,7 @@ public class Main {
             System.out.println("Значение неприемлемо. Завершение работы!");
             System.exit(0);
         }
-            Timer times = new Timer(90);
+            Timer times = new Timer(timeInSeconds);
             times.start();
     }
 }
