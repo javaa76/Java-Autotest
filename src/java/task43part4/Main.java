@@ -9,12 +9,12 @@ public class Main {
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
         if ((a + b > c) && (a + c > b) && (c + b > a)) {
-            if ((a < c) || (b < c)) {
+            if ((a < c) && (b < c)) {
                     a = a + c;
                     c = a - c;
                     a = a - c;
                 }
-             else if (b > c || b > a){
+             else if (b > c && b > a){
                 a = a + b;
                 b = a - b;
                 a = a - b;
