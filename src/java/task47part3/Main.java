@@ -29,7 +29,7 @@ public class Main {
                 value += col;
                 }
             if ((value - 1) % col == 0) System.out.println();
-            if (value >= n) break;
+            if (value > n) break;
             }
 
 
